@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">SmartPantryManager</string>
+    <string name="no_recipes">No recipes available yet.</string>
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#F5F7F5">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Shopping List"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#2E7D32"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/edtShoppingName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingredient name"
+        android:inputType="textCapSentences"
+        android:singleLine="true"/>
+
+    <EditText
+        android:id="@+id/edtShoppingQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Quantity (optional)"
+        android:inputType="textCapSentences"
+        android:singleLine="true"/>
+
+    <Button
+        android:id="@+id/btnAddShoppingItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add to Shopping List"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tap an item to mark it as purchased or delete it."
+        android:textSize="14sp"
+        android:textColor="#555555"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="8dp"/>
+
+    <ListView
+        android:id="@+id/listShopping"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:dividerHeight="8dp"/>
+
+</LinearLayout>

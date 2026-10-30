@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#FFF0F5">
+
+    <!-- Screen title -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Ingredient"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#D81B60"
+        android:gravity="center"
+        android:layout_marginBottom="30dp"/>
+
+    <!-- Ingredient name -->
+    <EditText
+        android:id="@+id/editIngredientName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingredient name"
+        android:inputType="textCapWords"
+        android:textColor="#333333"
+        android:backgroundTint="#8FAF9A"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Ingredient quantity -->
+    <EditText
+        android:id="@+id/editQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Quantity"
+        android:inputType="numberDecimal"
+        android:textColor="#333333"
+        android:backgroundTint="#8FAF9A"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Ingredient unit -->
+    <EditText
+        android:id="@+id/editUnit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Unit (e.g. kg, g, ml, pcs)"
+        android:inputType="text"
+        android:textColor="#333333"
+        android:backgroundTint="#8FAF9A"
+        android:layout_marginBottom="25dp"/>
+
+    <!-- Save ingredient button -->
+    <Button
+        android:id="@+id/btnSaveIngredient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Ingredient"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#8FAF9A"
+        android:layout_marginTop="15dp"/>
+
+</LinearLayout>

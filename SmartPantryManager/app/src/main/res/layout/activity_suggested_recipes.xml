@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#FFF0F5">
+
+    <!-- Screen heading -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Suggested Recipes"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#D81B60"
+        android:gravity="center"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Description -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delicious meals using ingredients you already have!"
+        android:textSize="15sp"
+        android:textColor="#555555"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Recipe list -->
+    <ListView
+        android:id="@+id/listRecipes"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="#E5C9D3"
+        android:dividerHeight="1dp"/>
+
+    <!-- Message when no recipes match -->
+    <TextView
+        android:id="@+id/textNoRecipes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No recipes match your pantry yet. Add more ingredients!"
+        android:textSize="16sp"
+        android:textColor="#777777"
+        android:gravity="center"
+        android:padding="20dp"
+        android:visibility="gone"/>
+
+    <!-- Back button -->
+    <Button
+        android:id="@+id/btnBackToPantry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back to My Pantry"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#8FAF9A"
+        android:layout_marginTop="15dp"/>
+
+</LinearLayout>
